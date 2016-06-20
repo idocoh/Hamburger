@@ -5,9 +5,27 @@
     xmlns:local="using:Hamburger.UI"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:esri="using:Esri.ArcGISRuntime.Controls"
+	xmlns:layers="using:Esri.ArcGISRuntime.Layers"
+	xmlns:data="using:Esri.ArcGISRuntime.Data"
+	xmlns:symb="using:Esri.ArcGISRuntime.Symbology"
+	xmlns:geom="using:Esri.ArcGISRuntime.Geometry"
+    
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <esri:SceneView x:Name="RooSceneView"
+					  LayerLoaded="OnRootSceneViewLayerLoaded">
+            <esri:Scene>
+                <esri:Scene.Surface>
+                    <esri:ElevationSourceCollection>
+                        <esri:ServiceElevationSource ServiceUri="http://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer"/>
+                    </esri:ElevationSourceCollection>
+                </esri:Scene.Surface>
+                <layers:ArcGISTiledMapServiceLayer ID="AGOLayer"
+                            ServiceUri="http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer" />
+            </esri:Scene>
+        </esri:SceneView>
     </Grid>
 </Page>

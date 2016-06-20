@@ -1,5 +1,7 @@
 ﻿{
   "dependencies": {
+    "Esri.ArcGISRuntime": "10.2.7.1234",
+    "Esri.ArcGISRuntime.Toolkit": "10.2.7.1234",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
