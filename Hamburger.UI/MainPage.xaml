@@ -14,7 +14,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <esri:SceneView x:Name="RooSceneView"
 					  LayerLoaded="OnRootSceneViewLayerLoaded">
             <esri:Scene>
