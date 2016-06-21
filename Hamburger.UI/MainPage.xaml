@@ -10,6 +10,7 @@
 	xmlns:data="using:Esri.ArcGISRuntime.Data"
 	xmlns:symb="using:Esri.ArcGISRuntime.Symbology"
 	xmlns:geom="using:Esri.ArcGISRuntime.Geometry"
+    xmlns:views="using:Hamburger.UI.Views"
     
     mc:Ignorable="d">
 
@@ -27,5 +28,6 @@
                             ServiceUri="http://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer" />
             </esri:Scene>
         </esri:SceneView>
+        <views:PaintToolBox/>
     </Grid>
 </Page>
