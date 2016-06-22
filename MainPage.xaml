@@ -1,33 +1,13 @@
 ﻿<Page
-    x:Class="HelloWorld.MainPage"
+    x:Class="PartyViewer.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:HelloWorld"
+    xmlns:local="using:PartyViewer"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <StackPanel Name="locationBar" VerticalAlignment="Bottom" HorizontalAlignment="Center" Orientation="Horizontal" Height="100" Canvas.ZIndex="1">
-        </StackPanel>
-        <StackPanel>
-            <FlipView Name="flipView" SelectionChanged="flipView_SelectionChanged">
-                <ScrollViewer ZoomMode="Enabled">
-                    <Image Stretch="Fill" Source="Assets\small.bmp"/>
-                </ScrollViewer>
-                <ScrollViewer ZoomMode="Enabled">
-                    <Image Stretch="Fill" Source="Assets\medium.bmp"/>
-                </ScrollViewer>
-                <ScrollViewer ZoomMode="Enabled">
-                    <Image Stretch="Fill" Source="Assets\large.bmp"/>
-                </ScrollViewer>
-                <ScrollViewer ZoomMode="Enabled">
-                    <Image Stretch="Fill" Source="Assets\list.bmp"/>
-                </ScrollViewer>
-            </FlipView>
-        </StackPanel>
+        
     </Grid>
 </Page>
