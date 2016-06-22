@@ -10,11 +10,11 @@
     xmlns:inkTools="using:Microsoft.Labs.InkToolbarControl" 
     mc:Ignorable="d">
     <RelativePanel>
-        <Button Name="FreeHandButton" Background="White" Content="&#xE104;" FontFamily="Segoe MDL2 Assets" FontSize="36" Click="FreeHandButton_Click"/>
-        <Button Name ="LineButton" Background="White" Content="&#xE738;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="FreeHandButton"/>
-        <Button Name ="AreaButton" Background="White" Content="&#xE932;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="LineButton"/>
+        <Button Name="EditButton" Background="White" Content="&#xE70F;" FontFamily="Segoe MDL2 Assets" FontSize="36" Click="EditButton_Click"/>
+        <Button Name ="LineButton" Background="White" Content="&#xE738;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="EditButton" Click="LineButton_Click"/>
+        <Button Name ="AreaButton" Background="White" Content="&#xE932;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="LineButton" Click="AreaButton_Click"/>
         <Border Name ="Border" RelativePanel.RightOf="AreaButton" Height="50" Width="4" BorderBrush="Black" BorderThickness="0,0,10,0"/>
-        <Button Name ="ColorPickButton" Background="White" Content="&#xE8D3;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="Border" Click="ColorPickButton_Click"/>
+        <Button Name ="ColorPickButton" Background="White" Content="&#xE8D3;" FontFamily="Segoe MDL2 Assets" FontSize="36" RelativePanel.RightOf="Border" Click="ColorPickButton_Click" Foreground="Yellow"/>
         <local:ColorPicker x:Name="ColorPicker" RelativePanel.Below="ColorPickButton" RelativePanel.AlignHorizontalCenterWith="ColorPickButton" Visibility="Collapsed" LostFocus="ColorPicker_LostFocus" ColorChanged="ColorPicker_ColorChanged"/>
     </RelativePanel>
 </UserControl>

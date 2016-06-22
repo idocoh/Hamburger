@@ -26,7 +26,7 @@ namespace Hamburger.UI.Views
     {
         public Colors SelectedColor { get; set; }
 
-        public delegate void ColorChangedEventHandler(object sender, Brush e);
+        public delegate void ColorChangedEventHandler(object sender, SolidColorBrush e);
 
         public event ColorChangedEventHandler ColorChanged;
 
@@ -52,7 +52,7 @@ namespace Hamburger.UI.Views
         {
             if(ColorChanged != null)
             {
-                ColorChanged(this, (((ColorInfo)e.AddedItems[0]).ColorBrush));
+                ColorChanged(this, (SolidColorBrush)(((ColorInfo)e.AddedItems[0]).ColorBrush));
             }
         }
     }
